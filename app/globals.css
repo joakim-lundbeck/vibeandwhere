@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 30% 86%;
+    --foreground: 187 67% 30%;
+    --card: 0 0% 89%;
+    --card-foreground: 187 67% 30%;
+    --popover: 0 0% 89%;
+    --popover-foreground: 187 67% 30%;
+    --primary: 187 67% 30%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 199 47% 78%;
+    --secondary-foreground: 187 67% 30%;
+    --muted: 0 0% 89%;
+    --muted-foreground: 187 40% 40%;
+    --accent: 199 47% 78%;
+    --accent-foreground: 187 67% 30%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 187 67% 30%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 160 30% 20%;
+    --foreground: 0 0% 98%;
+    --card: 160 30% 25%;
+    --card-foreground: 0 0% 98%;
+    --popover: 160 30% 25%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 187 67% 40%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 199 47% 30%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 160 30% 30%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 199 47% 30%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 160 30% 30%;
+    --input: 160 30% 30%;
+    --ring: 187 67% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans tracking-tight;
+  }
+}
+
+.gradient-bg {
+  background: linear-gradient(to bottom, #d1e8e2 60%, #a9d6e5);
+}
+
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
